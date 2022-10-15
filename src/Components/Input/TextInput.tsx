@@ -1,7 +1,7 @@
 import React from "react";
 import "./TextInput.scss";
 
-const TextInput = ({ label, imgSrc, error, name, ...rest }) => {
+const TextInput = ({ label, imgSrc, error, name, ...rest }:any) => {
   return (
     <div className="text-input">
       <label>{label}</label>

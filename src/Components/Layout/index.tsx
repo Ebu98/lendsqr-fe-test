@@ -4,7 +4,11 @@ import TopNav from "../TopNavBar/Navbar";
 
 import './layout.scss'
 
-const Layout = ({ children }) => {
+
+type Props = {
+  children?: React.ReactNode
+};
+const Layout = ({ children }: Props) => {
   return (
     <div className="layout">
       <TopNav />
