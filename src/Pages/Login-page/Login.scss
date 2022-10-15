@@ -1,0 +1,169 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  // max-width: 1440px;
+  // width: calc(100% - 70px);
+  height: 900px;
+  background: #ffffff;
+
+  @media (max-width: 1200px){
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 40px;
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 100px 0;
+    }
+  }
+
+  .input-container {
+    background: #ffffff;
+    box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+    width: 1440px;
+    height: 900px;
+
+    
+
+    .form-wapper {
+      margin-top: 220px;
+      form {
+        display: flex;
+        margin-left: 100px;
+
+        p {
+          font-family: "Avenir Next";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: right;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #39cdcc;
+          display: flex;
+          // padding: 0 300px 0 0;
+        }
+      }
+      .form-text {
+        display: flex;
+        flex-direction: column;
+        margin: 60px 0 0 100px;
+      }
+      h1 {
+        font-family: "Avenir Next";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: -0.04em;
+        color: #213f7d;
+      }
+      p {
+        font-family: "Avenir Next";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #545f7d;
+      }
+
+      input {
+        width: 447px;
+        height: 50px;
+        margin: 24px 0;
+        background: #ffffff;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        border-radius: 5px;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .login-page{
+
+  .input-container{
+    width: 820px;
+
+    .form-wapper{
+      margin-bottom: 150px;
+    }
+  }
+}
+}
+
+
+
+@media (max-width: 667px) {
+  .login-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5px;
+
+    .logo-container {
+      width: 100%;
+
+      .image-container {
+        width: 80%;
+        margin-top: -50px 0 30px 0;
+      }
+    }
+
+    .input-container {
+      width: 360px;
+      margin-top: -180px;
+
+      .form-wapper{
+        
+      .form-text {
+        margin-top: -80px;
+      }
+
+      .form {
+        width: 100px;
+
+        p {
+          margin: 0 -60px;
+          white-space: nowrap;
+          font-size: 12px;
+        }
+
+        input {
+          width: 315px;
+          display: flex;
+          margin: 10px -69px;
+        }
+      }
+    }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .login-page {
+
+    .input-container {
+      width: 316px;
+      margin-top: -180px;
+
+      .form-wapper{
+      .form {
+        
+        input {
+          width: 300px;
+          margin: 10px -90px;
+        }
+      }
+    }
+  }
+
+}
+}

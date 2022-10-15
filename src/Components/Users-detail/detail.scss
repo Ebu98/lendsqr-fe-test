@@ -1,0 +1,69 @@
+.user-detail {
+  margin-top: 30px;
+  height: 910px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 30px;
+  overflow: auto;
+
+  h5 {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    white-space: nowrap;
+    color: #213f7d;
+    margin-bottom: 30px;
+  }
+
+  p {
+    width: 97px;
+    height: 14px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #545f7d;
+  }
+  h4 {
+    width: 152px;
+    height: 19px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 19px;
+    color: #545f7d;
+  }
+
+  .personal-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+    min-width: 977px;
+
+    &.education-employment {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    > div {
+      p {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .line {
+    height: 0px;
+    border-bottom: 1px solid rgba(#213f7d, 0.1);
+    margin-bottom: 30px;
+  }
+}

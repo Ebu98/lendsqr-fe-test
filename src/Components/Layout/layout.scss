@@ -1,0 +1,28 @@
+.layout {
+    height: 100vh;
+  
+    .main-contents {
+      height: 100%;
+      display: flex;
+  
+      > div, & > aside {
+        padding-top: 100px;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+
+      .main-hero {
+          width: 100%;
+          padding: 30px;
+          padding-top: 160px;
+
+          @media only screen and (min-width: 1024px) {
+            width: calc(100% - 283px);
+            padding: 60px;
+            padding-top: 160px;
+          }
+      }
+    }
+  }
+  

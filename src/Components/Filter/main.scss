@@ -1,0 +1,40 @@
+.main-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px 28px 20px;
+
+  .buttons-wrap {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+
+    .reset {
+      width: 98px;
+      height: 40px;
+      background: #ffffff;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #545f7d;
+
+      border: 1px solid #545f7d;
+      border-radius: 8px;
+    }
+    .filter {
+      width: 98px;
+      height: 40px;
+      background: #39cdcc;
+      border: 1px solid #39cdcc;
+      border-radius: 8px;
+      font-family: "Work Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
+}

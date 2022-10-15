@@ -1,0 +1,123 @@
+.user-container {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 30px;
+  padding-bottom: 40px;
+  position: relative;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: 843px) {
+    height: 300px;
+    padding: 30px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    height: 210px;
+  }
+
+  .user-profile-infor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    @media only screen and (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      background: rgba(#213f7d, 0.16);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-text {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      flex-direction: column;
+
+      .line {
+        background-color: rgba(#545f7d, 0.2);
+        width: 2px;
+        height: 40px;
+      }
+
+      > div {
+        h3 {
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          color: #213f7d;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-family: "Work Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #545f7d;
+        }
+
+        .stars {
+          margin-top: 10.96px;
+          display: flex;
+          gap: 5.25px;
+        }
+      }
+
+      @media only screen and (min-width: 843px) {
+        flex-direction: row;
+        gap: 30px;
+
+        .line {
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  .user-infor-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+
+    .user-infor {
+      display: flex;
+      width: fit-content;
+      padding-right: 30px;
+
+      h4 {
+        width: 170px;
+        padding: 10px;
+        font-family: "Work Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        cursor: pointer;
+
+        &.active, &:hover {
+          color: #39cdcc;
+          border-bottom: 2px solid #39cdcc;
+        }
+      }
+    }
+  }
+}

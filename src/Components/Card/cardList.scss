@@ -1,0 +1,10 @@
+.card-list {
+  display: flex;
+  gap: 18.5px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+
+  @media only screen and (min-width: 1440px) {
+    gap: 25px;
+  }
+}
