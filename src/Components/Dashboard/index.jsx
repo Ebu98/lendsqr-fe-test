@@ -55,7 +55,7 @@ const UsersPage = () => {
   const [users, setUsers] = useState([]);
   const [errors, setErrors] = useState("");
   const [loading, setLoading] = useState(false);
-  const status = ["pending", "active", "inactive", "blacklisted"];
+  const status = ["pending", "active", "inactive", "blacklisted"]; 
 
   const getRandomInt = (min, max) => {
     min = Math.ceil(min);
@@ -89,7 +89,7 @@ const UsersPage = () => {
         });
     };
     fetchUsers();
-  }, []);
+  }, []); // eslint-disable-line
   const titles = [
     {
       icon: DropIcon,
@@ -125,6 +125,7 @@ const UsersPage = () => {
 
   return (
     <section className="mainContents">
+      {errors && <p>{errors}</p>}
       {users.length && !loading ? (
         <div className="table-wrapper">
           <table>
