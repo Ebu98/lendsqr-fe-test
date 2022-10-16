@@ -9,6 +9,7 @@ import { ReactComponent as ActivateIcon } from "../../assests/icon/activate-user
 import "./dashboard.scss";
 import DropdownInput from "../Filter/DropdownInput";
 
+
 const DotTD = () => {
   const [tableDrop, setTableDrop] = useState(false);
   return (
@@ -61,35 +62,34 @@ const UsersPage = () => {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
-
-  const fetchUsers = () => {
-    setLoading(true);
-    axios
-      .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
-      .then((response) => {
-        setLoading(false);
-        const format = response.data?.map(
-          ({ id, orgName, userName, phoneNumber, email, createdAt }) => ({
-            id,
-            orgName,
-            userName,
-            phoneNumber,
-            email,
-            createdAt: moment(createdAt).format("LLL"),
-            status: status[getRandomInt(0, 3)],
-          })
-        );
-        setUsers(format);
-        console.log(response.data);
-      })
-      .catch((error) => {
-        setLoading(false);
-        setErrors(error?.response?.data || "Sorry, something went wrong!");
-      });
-  };
   useEffect(() => {
+    const fetchUsers = () => {
+      setLoading(true);
+      axios
+        .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
+        .then((response) => {
+          setLoading(false);
+          const format = response.data?.map(
+            ({ id, orgName, userName, phoneNumber, email, createdAt }) => ({
+              id,
+              orgName,
+              userName,
+              phoneNumber,
+              email,
+              createdAt: moment(createdAt).format("LLL"),
+              status: status[getRandomInt(0, 3)],
+            })
+          );
+          setUsers(format);
+          console.log(response.data);
+        })
+        .catch((error) => {
+          setLoading(false);
+          setErrors(error?.response?.data || "Sorry, something went wrong!");
+        });
+    };
     fetchUsers();
-  },[]);
+  }, []);
   const titles = [
     {
       icon: DropIcon,
@@ -125,7 +125,7 @@ const UsersPage = () => {
 
   return (
     <section className="mainContents">
-      {users.length && !loading? (
+      {users.length && !loading ? (
         <div className="table-wrapper">
           <table>
             <thead>
