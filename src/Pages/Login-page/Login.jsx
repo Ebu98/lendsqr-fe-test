@@ -5,8 +5,13 @@ import { ReactComponent as Image } from "../../assests/image/image.svg";
 import Button from "../../Components/Button/Button";
 import "./Login.scss";
 
+
+// interface Place{
+//   email:string,
+//   password:string
+// }
 const LoginPage = () => {
-  const [inputs, setInputs] = useState({ email: "", password: "" });
+  const [inputs, setInputs] = useState({ email:"", password:""});
   const navigate = useNavigate();
 
   const onChange = ({ target: { name, value } }) => {
@@ -19,7 +24,7 @@ const LoginPage = () => {
   const handleSubmit = () => {
     if (inputs.email && inputs.password) navigate("/users");
   };
-
+  
   return (
     <div className="login-page">
       <div className="logo-container">

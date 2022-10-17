@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Search from "../Input/search"
-import { ReactComponent as LogoIcon } from "../../assests/icon/logo.svg";
-import { ReactComponent as BellIcon } from "../../assests/icon/bell.svg";
+import { LogoIcon, BellIcon } from "../../assests/icon"
 import photo from "../../assests/image/Ellipse 1.png";
 import Menu  from "../../assests/image/menu.png";
 import "./Navbar.scss";

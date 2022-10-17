@@ -1,11 +1,10 @@
 import React from "react";
 import "./detail.scss";
 
-function UsersDetail({details}) {
-  console.log(details)
+function UsersDetail({details}:any) {
   return (
     <section className="user-detail">
-    {details.map(detail => { 
+    {details.map((detail:any) => { 
         return(
     <div >
       <h5>personal information</h5>

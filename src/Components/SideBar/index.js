@@ -22,6 +22,7 @@ import { ReactComponent as PreferencesIcon } from "../../assests/icon/settings.s
 import { ReactComponent as FeesPriceIcon } from "../../assests/icon/pricing.svg";
 import { ReactComponent as AuditLogsIcon } from "../../assests/icon/audit.svg";
 import { ReactComponent as CaretIcon } from "../../assests/icon/caret.svg";
+// import { PreferencesIcon, FeesPriceIcon, AuditLogsIcon, CaretIcon,ReportsIcon,SettlementsIcon,ServiceAccIcon,TransactionsIcon,FeesCharIcon,SavingsProIcon } from "../../assests/icon"
 import "./Sidebar.scss";
 import { NavLink } from "react-router-dom";
 
@@ -36,6 +37,7 @@ const Sidebar = () => {
       icon: DashboardIcon,
       text: "Dashboard",
       isDropdown: false,
+      link:"/users/detail",
     },
   ];
   const customers = [
@@ -132,14 +134,14 @@ const Sidebar = () => {
     settings,
   };
   const logout = () => {
-    localStorage.removeItem("signup");
+    localStorage.removeItem("/users/detail");
   };
   return (
     <aside className="sidebar">
       <div className="top-links">
-        {links.map(({ text, icon: Icon, isDropdown }) => (
+        {links.map(({ text, icon: Icon, isDropdown, link }) => (
           <NavLink
-            to={`/${text.toLocaleLowerCase().replace(" ", "-")}`}
+            to={link}
             key={text}
             className="link"
           >
@@ -156,7 +158,7 @@ const Sidebar = () => {
             <div className="link-list">
               {navLinks[key].map(({ text, icon: Icon }) => (
                 <NavLink
-                  to={"/users/detail"}
+                  to={`/${text.toLocaleLowerCase().replace(" ", "-")}`}
                   key={text}
                   className="link"
                 >

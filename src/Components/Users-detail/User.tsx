@@ -1,7 +1,6 @@
 import React from "react";
 import user from "../../assests/image/user-profile.png";
-import { ReactComponent as StarFilledIcon } from "../../assests/icon/star-filled.svg";
-import { ReactComponent as StarIcon } from "../../assests/icon/star.svg";
+import { StarFilledIcon,StarIcon  } from "../../assests/icon";
 import "./User.scss";
 
 function User() {

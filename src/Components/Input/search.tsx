@@ -1,9 +1,12 @@
 import React from "react";
-import { ReactComponent as SearchIcon } from "../../assests/icon/search.svg";
+import { SearchIcon } from "../../assests/icon"
 
 import "./search.scss";
 
-const Search = (props) => {
+type Props = {
+  props?: React.ReactNode
+};
+const Search: React.FC<Props> = (props) => {
   return (
     <div className="search-input">
       <div className="input">

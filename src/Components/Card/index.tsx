@@ -2,7 +2,7 @@ import React from "react";
 
 import "./card.scss";
 
-const Card = ({ icon: Icon, title, amount }) => {
+const Card = ({ icon: Icon, title, amount }:any) => {
   return (
     <div className="custom-card">
       <Icon />
