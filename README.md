@@ -53,13 +53,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 4. FAQs
 ### General Info
 Three pages application built with react typscript, login page, users page, user detail page
-### Screenshot
+![Screen Shot 2022-10-17 at 8 03 30 AM](https://user-images.githubusercontent.com/91473642/196116052-e02ea030-a492-4432-b98b-46566168a47e.png)
 
-![Screen Shot 2022-10-![Screen Shot 2022-10-17 at 8 03 05 AM](https://user-images.githubusercontent.com/91473642/196114878-7680f113-b07a-416a-9404-17604e4b6579.png)
 
 ![Screen Shot 2022-10-17 at 8 02 31 AM](https://user-images.githubusercontent.com/91473642/196115011-0acef4ca-7911-4cca-8e4b-da820357e387.png)
 
 ![Screen Shot 2022-10-17 at 8 03 05 AM](https://user-images.githubusercontent.com/91473642/196115144-7e73a545-d128-4e5c-b976-e0a06ef54b8e.png)
+
 
 
 ## Technologies
