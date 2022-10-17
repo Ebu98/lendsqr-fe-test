@@ -82,8 +82,8 @@ Side information: To use the application in a special environment use below step
 ## FAQs
 A list of frequently asked questions
 
-HOW DO I USE THE APPLICATION MY LOCAL MACHINE
-HOW WILL ACCESS THE PAGES ON THE HOSTED VERSION OF THE APPLICATION
+1. HOW DO I USE THE APPLICATION MY LOCAL MACHINE
+2. HOW WILL ACCESS THE PAGES ON THE HOSTED VERSION OF THE APPLICATION
 
 For the first question
 
