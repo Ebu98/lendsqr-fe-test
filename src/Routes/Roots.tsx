@@ -1,5 +1,5 @@
 import { BrowserRouter} from "react-router-dom";
-import App from ".";
+import App from "./index";
 
 const Root = () => (
   <BrowserRouter>

@@ -1,4 +1,4 @@
-import Card from ".";
+import Card from "./index";
 import { ReactComponent as First } from "../../assests/icon/users-card.svg";
 import { ReactComponent as Group} from "../../assests/icon/group-card-icon.svg";
 import { ReactComponent as Paper} from "../../assests/icon/paper-card-icon.svg";

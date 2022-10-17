@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Dashboard from "../Pages/Dashboard-page/Dashboard";
 import DetailsDashboard from "../Pages/User-details-page/Users-detail";
 import Layout from "../Components/Layout";
@@ -27,6 +27,10 @@ function App() {
           </Layout>
         }
       />
+      <Route
+        path="*"
+        element={<Navigate to="/login" replace />}
+    />
     </Routes>
   );
 }
