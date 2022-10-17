@@ -53,41 +53,54 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 4. FAQs
 ### General Info
 Three pages application built with react typscript, login page, users page, user detail page
-### Screenshot
+![Screen Shot 2022-10-17 at 8 03 30 AM](https://user-images.githubusercontent.com/91473642/196116052-e02ea030-a492-4432-b98b-46566168a47e.png)
+
+
+![Screen Shot 2022-10-17 at 8 02 31 AM](https://user-images.githubusercontent.com/91473642/196115011-0acef4ca-7911-4cca-8e4b-da820357e387.png)
+
+![Screen Shot 2022-10-17 at 8 03 05 AM](https://user-images.githubusercontent.com/91473642/196115144-7e73a545-d128-4e5c-b976-e0a06ef54b8e.png)
+
+
 
 ## Technologies
 React: Version 18.2.0
 
 Library name:
-Axios: Version 1.1.2
-Moment: Version 2.29.4
-React-router-dom: Version 6.4.2
+
+1. Axios: Version 1.1.2
+2. Moment: Version 2.29.4
+3. React-router-dom: Version 6.4.2
 
 ## Installation
 Side information: To use the application in a special environment use below steps to start
-git clone https://github.com/Ebu98/lendsqr-fe-test.git
-cd lendsqr-fe-test
-npm install (The command to install the dependencies )
-npm start
+
+1. git clone https://github.com/Ebu98/lendsqr-fe-test.git
+2. cd lendsqr-fe-test
+3. npm install (The command to install the dependencies )
+4. npm start
 
 ## FAQs
 A list of frequently asked questions
 
-HOW DO I USE THE APPLICATION MY LOCAL MACHINE
-HOW WILL ACCESS THE PAGES ON THE HOSTED VERSION OF THE APPLICATION
+1. HOW DO I USE THE APPLICATION MY LOCAL MACHINE
+2. HOW WILL ACCESS THE PAGES ON THE HOSTED VERSION OF THE APPLICATION
 
 For the first question
 
-.When you follow the above installation process and successfully clone the project to local machine
-.The first page that will display is login page
-.Type in the login credentials(email and password)
-.It will automatically take you to the users page where you will see the list of all the users
-.Finally to navigate to details page you type the path name (/users/detail) 
+. When you follow the above installation process and successfully clone the project to local machine
+. The first page that will display is login page
+. Type in the login credentials(email and password)
+. It will automatically take you to the users page where you will see the list of all the users
+. Finally to navigate to details page you type the path name (/users/detail) 
 
 
 Second question
+
 When you open the link below
-.The first page that will display is login page
-.Type in the login credentials(email and password)
-.It will automatically take you to the users page where you will see the list of all the users
+https://lendsqr-fe.netlify.app
+
+. The first page that will display is login page
+. Type in the login credentials(email and password)
+. It will automatically take you to the users page where you will see the list of all the users
+
 Then click on the dashboard on the the sidebar to take you the details page
