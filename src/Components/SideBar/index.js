@@ -156,7 +156,7 @@ const Sidebar = () => {
             <div className="link-list">
               {navLinks[key].map(({ text, icon: Icon }) => (
                 <NavLink
-                  to={`/${text.toLocaleLowerCase().replace(" ", "-")}`}
+                  to={"/users/detail"}
                   key={text}
                   className="link"
                 >

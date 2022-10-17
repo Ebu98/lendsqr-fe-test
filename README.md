@@ -47,51 +47,47 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 ## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+1. General Info
+2. Technologies
+3. Installation
+4. FAQs
 ### General Info
-***
-Write down general information about your project. It is a good idea to always put a project status in the readme file. This is where you can add it. 
+Three pages application built with react typscript, login page, users page, user detail page
 ### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
+
 ## Technologies
-***
-A list of technologies used within the project:
-* [Technology name](https://example.com): Version 12.3 
-* [Technology name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
+React: Version 18.2.0
+
+Library name:
+Axios: Version 1.1.2
+Moment: Version 2.29.4
+React-router-dom: Version 6.4.2
+
 ## Installation
-***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> Should it encompass several lines?
-> This is how you do it.
+Side information: To use the application in a special environment use below steps to start
+git clone https://github.com/Ebu98/lendsqr-fe-test.git
+cd lendsqr-fe-test
+npm install (The command to install the dependencies )
+npm start
+
 ## FAQs
-***
 A list of frequently asked questions
-1. **This is a question in bold**
-Answer to the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question, we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer to the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+
+HOW DO I USE THE APPLICATION MY LOCAL MACHINE
+HOW WILL ACCESS THE PAGES ON THE HOSTED VERSION OF THE APPLICATION
+
+For the first question
+
+.When you follow the above installation process and successfully clone the project to local machine
+.The first page that will display is login page
+.Type in the login credentials(email and password)
+.It will automatically take you to the users page where you will see the list of all the users
+.Finally to navigate to details page you type the path name (/users/detail) 
+
+
+Second question
+When you open the link below
+.The first page that will display is login page
+.Type in the login credentials(email and password)
+.It will automatically take you to the users page where you will see the list of all the users
+Then click on the dashboard on the the sidebar to take you the details page
