@@ -151,4 +151,13 @@
       }
     }
   }
+  
+}
+.pagination {
+  justify-content: flex-end;
+  display: flex;
+  padding-left: 0;
+  margin: 15px 0;
+  letter-spacing: 10px;
+  list-style: none;
 }

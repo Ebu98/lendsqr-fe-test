@@ -8,6 +8,8 @@ import { ReactComponent as BlacklistIcon } from "../../assests/icon/blacklist-us
 import { ReactComponent as ActivateIcon } from "../../assests/icon/activate-user.svg";
 import "./dashboard.scss";
 import DropdownInput from "../Filter/DropdownInput";
+import Pagination from "../pagination";
+
 
 
 const DotTD = () => {
@@ -55,6 +57,9 @@ const UsersPage = () => {
   const [users, setUsers] = useState([]);
   const [errors, setErrors] = useState("");
   const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [usersPerPage] = useState(9);
+
   const status = ["pending", "active", "inactive", "blacklisted"]; 
 
   const getRandomInt = (min, max) => {
@@ -90,6 +95,15 @@ const UsersPage = () => {
     };
     fetchUsers();
   }, []); // eslint-disable-line
+
+  // Get current posts
+  const indexOfLastUser = currentPage * usersPerPage;
+  const indexOfFirstUser = indexOfLastUser - usersPerPage;
+  const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
+
+  // Change page
+  const paginate = pageNumber => setCurrentPage(pageNumber);
+
   const titles = [
     {
       icon: DropIcon,
@@ -124,6 +138,7 @@ const UsersPage = () => {
   ];
 
   return (
+    <>
     <section className="mainContents">
       {errors && <p>{errors}</p>}
       {users.length && !loading ? (
@@ -138,7 +153,7 @@ const UsersPage = () => {
               </tr>
             </thead>
             <tbody>
-              {users.map((user) => (
+              {users && currentUsers.map((user) => (
                 <tr key={user.id}>
                   {titles.map(({ col }) => (
                     <td key={col} className={col}>
@@ -158,7 +173,15 @@ const UsersPage = () => {
       ) : null}
       {!users.length && !loading ? <p>No data to display</p> : null}
       {loading && <p>Loading...</p>}
+      
     </section>
+
+    <Pagination
+        usersPerPage={usersPerPage}
+        totalUsers={users.length}
+        paginate={paginate}
+      />
+    </>
   );
 };
 
